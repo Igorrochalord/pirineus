@@ -1,7 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
+//React: Importando a biblioteca principal do React.
+//View, Text, StyleSheet, TouchableOpacity: Importando componentes específicos e utilitários da biblioteca react-native.
+
 const Task = (props) => {
+//Definindo um componente funcional chamado Task que recebe props como parâmetro.
+
 
   return (
     <View style={styles.item}>
@@ -13,7 +18,12 @@ const Task = (props) => {
     </View>
   )
 }
+//O componente retorna uma View contendo dois componentes filhos View (itemLeft e circular).
+//itemLeft contém um quadrado (square) e um texto (itemText) com base no valor de props.text passado para o componente.circular é um elemento circular.
 
+
+//Esses estilos definem a aparência visual do componente, como cores, tamanhos e posicionamento.
+// O componente Task está destinado a representar uma tarefa em um aplicativo React Native.
 const styles = StyleSheet.create({
   item: {
     backgroundColor: '#FFF',
